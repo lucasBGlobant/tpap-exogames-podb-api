@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version "2.6.7"
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+
+}
+group = 'com.exogames'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':model')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+

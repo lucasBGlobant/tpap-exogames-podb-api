@@ -1,0 +1,23 @@
+rootProject.name = 'ms-exogames-user-manager'
+
+include ':application'
+project(':application').projectDir = file('./application/user_manager_app')
+
+include ':model'
+project(':model').projectDir = file('./domain/model')
+
+include ':usecases'
+project(':usecases').projectDir = file('./domain/usecases/')
+
+include ':commons_services'
+project(':commons_services').projectDir = file('./infraestructure/helpers/commons_services')
+
+include ':rest_controller'
+project(':rest_controller').projectDir = file('./infraestructure/input/rest_controller')
+
+include ':persistence_component'
+project(':persistence_component').projectDir = file('./infraestructure/output/persistence_component')
+
+include ':security_component'
+project(':security_component').projectDir = file('./infraestructure/output/security_component')
+
